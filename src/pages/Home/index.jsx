@@ -16,7 +16,7 @@ function Home() {
       age: 28,
       email: "aline@gmail.com",
     },
-        {
+    {
       id: "3",
       name: "Paulo",
       age: 66,
@@ -28,13 +28,13 @@ function Home() {
     <div className="container">
       <form>
         <h1>Cadastro de Usuários</h1>
-        <input name="nome" type="text" />
-        <input name="idade" type="number" />
-        <input name="e-mail" type="email" />
+        <input placeholder="Nome" name="nome" type="text" />
+        <input placeholder="Idade" name="idade" type="number" />
+        <input placeholder="Email" name="e-mail" type="email" />
         <button type="button"> Cadastrar</button>
       </form>
       {users.map((user) => (
-        <div key={user.id}>
+        <div key={user.id} className="card">
           <div>
             <p>Nome: {user.name}</p>
             <p>Idade: {user.age}</p>
